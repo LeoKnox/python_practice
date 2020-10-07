@@ -13,5 +13,6 @@ class Adventurer:
 x = SetX()
 a1 = Adventurer("Eveehi","Sword",3)
 a2 = Adventurer("Aelien","Spear",3)
+a1.skill = "Hammer"
 a1.identfunc()
 a2.identfunc()
