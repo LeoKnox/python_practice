@@ -1,6 +1,9 @@
 class SetX:
     x = 5
 
+class Undead:
+    pass
+
 class Adventurer:
     def __init__(self, name, skill, lvl):
         self.name = name
