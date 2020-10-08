@@ -31,5 +31,6 @@ a1 = Scout("Eveehi","Sword",3, "Sniper")
 a2 = Fighter("Aelien","Spear",3, "Weapon Master")
 a1.skill = "Hammer"
 print(a1.weapon)
+a1.identfunc()
 a1.subclassattack()
 a2.subclassattack()
