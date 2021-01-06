@@ -2,6 +2,8 @@ a = { 4, 5, 6 }
 b = { 5, 6, 7 }
 
 print (a.union(b))
+print (a.difference(b)) #4
+print(b.difference(a))  #7
 
 '''
 inter = {7, 8, 9 } & {5, 6, 7}
