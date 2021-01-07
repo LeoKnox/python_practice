@@ -6,12 +6,12 @@ class Character(object):
         self.title = ("The " + char_class + " called " + char_name + "!")
         
         @classmethod
-        def greet(self):
+        def hail(self):
             print("My name is " + self.char_name + " and I am a " + self.char_class + "!")
 
 a = Character("Aelien", "Fight", 3)
 print(a.title)
-a.greet()
+a.hail()
 
 '''
 class MyClass:
