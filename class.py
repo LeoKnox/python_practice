@@ -3,8 +3,9 @@ class Character(object):
         self.char_name = char_name
         self.char_class = char_class
         self.level = level
-        self.title = "The " + char_class + " called " + char_name + "!")
+        self.title = ("The " + char_class + " called " + char_name + "!")
         
+        @classmethod
         def greet(self):
             print("My name is " + self.char_name + " and I am a " + self.char_class + "!")
 
