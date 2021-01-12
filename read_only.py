@@ -2,7 +2,7 @@ class Character(object):
     def __init__(self, name, max_hp):
         self._name = name
         self._hp = max_hp
-        self._max = max_hp
+        self._max_hp = max_hp
         
     @property
     def hp(self):
@@ -25,8 +25,11 @@ class Character(object):
         return self.hp < self.max_hp if self.hp > 0 else False
     
     @property
-    def Is_dead(self):
+    def is_dead(self):
         return not self.is_alive
 
 elric = Character('Elric', 100)
 print(elric.hp)
+
+print(elric.is_dead)
+print(elric.is_wounded)
