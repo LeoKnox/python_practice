@@ -13,8 +13,8 @@ class Character(object):
         return self.name
     
     def take_damage(self, damage):
-        self.hp -= damage
-        self.hp = 0 if self.hp <0 else self.hp
+        self._hp -= damage
+        self._hp = 0 if self.hp <0 else self.hp
     
     @property
     def is_alive(self):
