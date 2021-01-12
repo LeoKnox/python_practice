@@ -22,7 +22,7 @@ class Character(object):
     
     @property
     def is_wounded(self):
-        return self.hp < self.max_hp if self.hp > 0 else False
+        return self.hp < self._max_hp if self.hp > 0 else False
     
     @property
     def is_dead(self):
