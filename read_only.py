@@ -39,5 +39,9 @@ elric.take_damage(10)
 print(elric.hp)
 print(elric.is_wounded)
 
-elric.take_damage(1000)
+#elric.take_damage(1000)
 print(elric.is_dead)
+
+elric._damage_bonus = 11
+elric.take_damage(10)
+print(elric.hp)
