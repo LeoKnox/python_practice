@@ -1,8 +1,9 @@
 class Character(object):
-    def __init__(self, name, max_hp):
+    def __init__(self, name, max_hp, damage_bonus=3):
         self._name = name
         self._hp = max_hp
         self._max_hp = max_hp
+        self._damage_bonus = damage_bonus
         
     @property
     def hp(self):
@@ -13,7 +14,7 @@ class Character(object):
         return self.name
     
     def take_damage(self, damage):
-        self._hp -= damage
+        self._hp -= damage + self._damage_bonus
         self._hp = 0 if self.hp <0 else self.hp
     
     @property
