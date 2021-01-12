@@ -33,3 +33,6 @@ print(elric.hp)
 
 print(elric.is_dead)
 print(elric.is_wounded)
+elric.take_damage(10)
+
+print(elric.hp)
