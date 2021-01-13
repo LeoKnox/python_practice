@@ -1,5 +1,5 @@
 def work_args(**kwargs):
     for key in kwargs:
-        print ("a = {0}, b={1}".format(key, kwargs[key]))
+        print ("{0} = {1}".format(key, kwargs[key]))
 
-work_args(a="1", b="2")
+work_args(one = "1", two = "2", three = "3")
