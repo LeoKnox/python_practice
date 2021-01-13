@@ -9,3 +9,4 @@ z = "zee"
 a = "aaa"
 
 print("{0} and {1}".format(z, a))
+print("reverse {} not {}".format(a, z))
