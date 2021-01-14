@@ -1,1 +1,2 @@
 SELECT * FROM Characters;
+SELECT Char_name FROM Characters;
