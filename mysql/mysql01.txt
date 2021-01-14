@@ -1,2 +1,3 @@
 SELECT * FROM Characters;
 SELECT Char_name FROM Characters;
+SELECT Char_name, Char_class, Char_level FROM Characters;
