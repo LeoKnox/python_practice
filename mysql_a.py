@@ -16,7 +16,14 @@ mycursor = mydb.cursor()
 sql = "INSERT INTO characters (name, class) VALUES (%s, %s)"
 val = ("Aelien", "Fighter")
 
-mycursor.execute(sql, val)
+#mycursor.execute(sql, val)
+
+val = [
+    ("Eveehi", "Mage"),
+    ("Xingu", "Rogue")
+]
+
+mycursor.executemany(sql, val)
 
 mydb.commit()
 
