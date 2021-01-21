@@ -13,18 +13,27 @@ mycursor = mydb.cursor()
 
 #mycursor.execute("ALTER TABLE characters ADD COLUMN id INT AUTO_INCREMENT PRIMARY KEY")
 
-sql = "INSERT INTO characters (name, class) VALUES (%s, %s)"
-val = ("Aelien", "Fighter")
+#sql = "INSERT INTO characters (name, class) VALUES (%s, %s)"
+#val = ("Aelien", "Fighter")
 
 #mycursor.execute(sql, val)
 
+'''
 val = [
     ("Eveehi", "Mage"),
     ("Xingu", "Rogue")
 ]
+'''
 
-mycursor.executemany(sql, val)
+#mycursor.executemany(sql, val)
 
-mydb.commit()
+#mydb.commit()
+
+mycursor.execute("SELECT * FROM characters")
+
+myresult = mycursor.fetchall()
+
+for x in myresult:
+    print(x)
 
 print(mycursor.rowcount, " number of rows")
