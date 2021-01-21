@@ -36,4 +36,10 @@ myresult = mycursor.fetchall()
 for x in myresult:
     print(x)
 
+mycursor.execute("SELECT name FROM characters")
+
+myresult = mycursor.fetchone()
+
+print(myresult)
+
 print(mycursor.rowcount, " number of rows")
