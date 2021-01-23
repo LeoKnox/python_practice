@@ -13,8 +13,14 @@ mycursor.execute("SELECT * FROM mysql_rooms")
 myrooms = mycursor.fetchall()
 
 for room in myrooms:
+    sql = "SELECT * FROM mysql_doors WHERE room_one = %s"
+    adr = (room[4],)
+    mycursor.execute(sql, adr)
     print(room)
-    
+    mydoors = mycursor.fetchall()
+    for door in mydoors:
+        print(door)
+
 #mycursor.execute("CREATE TABLE mysql_room (name VARCHAR(50), description VARCHAR(255), length INT, width INT)")
 #mycursor.execute("ALTER TABLE mysql_room ADD COLUMN id INT AUTO_INCREMENT PRIMARY KEY")
 
