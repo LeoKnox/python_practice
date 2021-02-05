@@ -29,6 +29,7 @@ class CharClass extends React.Component {
             </label>
           </li>
         ))}
+	<CharClass />
         </ol>
       </div>
     )
