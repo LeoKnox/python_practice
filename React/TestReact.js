@@ -1,6 +1,6 @@
 class FighterClass extends React.Componnent {
 	render() {
-  	return <li>Attack with Sword</li>;
+  	return <li>Attack with {this.state.weapon}</li>;
   }
 }
 
@@ -29,7 +29,7 @@ class CharClass extends React.Component {
             </label>
           </li>
         ))}
-	<CharClass />
+	<CharClass weapon="Sword" />
         </ol>
       </div>
     )
