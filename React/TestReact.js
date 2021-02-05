@@ -1,3 +1,9 @@
+class FighterClass extends React.Componnent {
+	render() {
+  	return <li>Attack with Sword</li>;
+  }
+}
+
 class CharClass extends React.Component {
   constructor(props) {
     super(props)
@@ -19,7 +25,6 @@ class CharClass extends React.Component {
         {this.state.items.map(item => (
           <li key={item.id}>
             <label>
-              <input type="checkbox" readOnly checked={item.done} /> 
               <span className={item.done ? "done" : ""}>{item.text}: {item.attr}</span>
             </label>
           </li>
