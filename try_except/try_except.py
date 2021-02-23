@@ -1,8 +1,8 @@
 try:
     print(x)
-except NameError:
-    print("CREATE X")
-except something_else:
+except:
     print("something_else went wrong")
 else:
-    print("We did something")
+    print("Well your kind of screwed")
+finally:
+    print("Something above was done")
