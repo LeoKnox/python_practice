@@ -1,3 +1,6 @@
+if x < 0:
+    raise exception("No negs!")
+
 try:
     print(x)
 except:
