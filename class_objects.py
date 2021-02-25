@@ -1,5 +1,7 @@
 class CharClass:
-    lvl = 1
+    def __init__(self, name, lvl):
+        self.name = name
+        self.lvl = lvl
 
-Eveehi = CharClass()
-print (Eveehi.lvl)
+c1 = CharClass("Eveehi", 1)
+print (c1.lvl)
