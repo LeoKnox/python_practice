@@ -8,3 +8,5 @@ class CharClass:
 
 c1 = CharClass("Eveehi", 1)
 c1.charDescription()
+c1.lvl = c1.lvl + 1
+c1.charDescription()
