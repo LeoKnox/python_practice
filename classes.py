@@ -1,4 +1,6 @@
 class Char_Class:
+    hp = 50
+
     def __init__(self, name): # constructor
         self.name = name
     
@@ -7,3 +9,4 @@ class Char_Class:
 
 obj = Char_Class("Elric")
 obj.char_method()
+print(obj.hp)
