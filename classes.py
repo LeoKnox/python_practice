@@ -1,3 +1,6 @@
+class Empty:
+    pass
+
 class Char_Class:
     hp = 50
 
