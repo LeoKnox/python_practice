@@ -7,6 +7,9 @@ class Char_Class:
     def __init__(self, name): # constructor
         self.name = name
     
+    def __str__(self):
+        return "From str hp is a:%s" % self.__hp
+    
     def takeDamage(self, damage):
         self.__hp -= damage
     
@@ -21,7 +24,8 @@ class Char_Class:
 
 obj = Char_Class("Elric")
 obj.char_method()
-print(obj.hp)
+#print(obj.hp)
 obj.addArmor("Plate")
 print("Wearing armor", obj.displayarmor())
 obj.takeDamage(3)
+print(obj)
