@@ -1,13 +1,19 @@
-class one(object):
-    one = 'this is one from one'
+class Character(object):
+    def __init__(self, name):
+        self.name = name
+    
+    def getChar(self):
+        return self.name
+    
+    def isActive(self):
+        return False
 
+class Active(Character):
+    def isActive(self):
+        return True
 
-class two(object):
-    one = 'this is one of two'
-    two = 'this is two of two'
+c1 = Character("Elric")
+print(c1.getChar(), c1.isActive())
 
-class borg(two, one):
-    borg = 'Assimilate'
-
-b = borg()
-print (b.one)
+c1 = Active("Aelien")
+print(c1.getChar(), c1.isActive())
