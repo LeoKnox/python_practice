@@ -5,20 +5,10 @@ class Character(object):
     def getChar(self):
         return self.name
     
-    def isActive(self):
-        return False
+class Fighter(Character):
+    def __init__(self, name, subclass):
+        super().__init__(name)
+        self.subclass = subclass
 
-class Active(Character):
-    def isActive(self):
-        return True
-
-c1 = Character("Elric")
-print(c1.getChar(), c1.isActive())
-
-c1 = Active("Aelien")
-print(c1.getChar(), c1.isActive())
-
-print(issubclass(Active, Character))
-print(issubclass(Character, Active))
-
-print(isinstance(c1, Active))
+x = Fighter("Aelien", "Swordsman")
+y = Fighter("Eveehi", "Archer")
