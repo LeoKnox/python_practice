@@ -10,5 +10,10 @@ class Fighter(Character):
         super().__init__(name)
         self.subclass = subclass
 
+    def showClass(self):
+        print("Character is", self.name, "and is a", self.subclass, "Fighter")
+
 x = Fighter("Aelien", "Swordsman")
 y = Fighter("Eveehi", "Archer")
+y.showClass()
+x.showClass()
