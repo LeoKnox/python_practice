@@ -17,3 +17,8 @@ print(c1.getChar(), c1.isActive())
 
 c1 = Active("Aelien")
 print(c1.getChar(), c1.isActive())
+
+print(issubclass(Active, Character))
+print(issubclass(Character, Active))
+
+print(isinstance(c1, Active))
