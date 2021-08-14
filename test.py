@@ -1,14 +1,17 @@
 x = "word"
-y = "xwords"
-b = False
+y = "wordx"
+b = True
+first = True
+second = False
+third = False
+i = 0
 
-for i in x:
-    for j in y:
-        if j==i:
-            b = True
-            print(i)
-        elif j!=1:
-            b = False
+for i in range(len(y)):
+    for j in range(len(x)):
+        if y[i]==x[j]:
+            print(x[j])
+        else:
+            first = False
 
 if b:
-    print('yes')
+    print('first')
