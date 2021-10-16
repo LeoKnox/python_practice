@@ -10,5 +10,6 @@ class linked_list:
 	def add_node(data):
 		new_node = linked_node(data)
 		this.linked_node = linked_node()
+		print ("test")
 
 newList = linked_list()
