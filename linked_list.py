@@ -9,7 +9,7 @@ class linked_list:
 
 	def add_node(self, data):
 		new_node = linked_node(data)
-		self.linked_list = linked_node()
+		self.head = new_node()
 		print ("test")
 
 newList = linked_list()
