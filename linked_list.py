@@ -8,12 +8,15 @@ class linked_list:
 		self.head = None
 
 	def show_list(self):
-		runner = self.head
-		while (runner.next != None):
+		if self.head == None:
+			print("None")
+		else:
+			runner = self.head
+			while (runner.next != None):
+				print(runner.value)
+				runner = runner.next
 			print(runner.value)
-			runner = runner.next
-		print(runner.value)
-		print("print list")
+			print("print list")
 
 	def add_node(self, data):
 		new_node = linked_node(data)
