@@ -8,8 +8,8 @@ class linked_list:
 		self.head = None
 
 	def add_node(self, data):
-		new_node = new linked_node(data)
-		self.head = new_node()
+		new_node = linked_node(data)
+		self.head = new_node
 		print ("test")
 
 newList = linked_list()
