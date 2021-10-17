@@ -8,9 +8,10 @@ class linked_list:
 		self.head = None
 
 	def show_list(self):
-		runner = this.head
-		while (runner.head != None):
+		runner = self.head
+		while (runner.next != None):
 			print(runner.value)
+			runner = runner.next
 		print("print list")
 
 	def add_node(self, data):
