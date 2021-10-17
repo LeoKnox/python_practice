@@ -7,6 +7,12 @@ class linked_list:
 	def __init__(self):
 		self.head = None
 
+	def show_list(self):
+		runner = this.head
+		while (runner.head != None):
+			print(runner.value)
+		print("print list")
+
 	def add_node(self, data):
 		new_node = linked_node(data)
 		if self.head == None:
@@ -20,3 +26,4 @@ class linked_list:
 newList = linked_list()
 newList.add_node(5)
 newList.add_node(6)
+newList.show_list()
