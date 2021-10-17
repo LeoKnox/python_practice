@@ -9,8 +9,14 @@ class linked_list:
 
 	def add_node(self, data):
 		new_node = linked_node(data)
-		self.head = new_node
-		print ("test")
+		if self.head == None:
+			self.head = new_node
+			print ("test")
+		else:
+			new_node.next = self.head
+			self.head = new_node
+			print('add node')
 
 newList = linked_list()
 newList.add_node(5)
+newList.add_node(6)
