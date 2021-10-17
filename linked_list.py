@@ -12,6 +12,7 @@ class linked_list:
 		while (runner.next != None):
 			print(runner.value)
 			runner = runner.next
+		print(runner.value)
 		print("print list")
 
 	def add_node(self, data):
