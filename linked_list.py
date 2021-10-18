@@ -12,6 +12,7 @@ class linked_list:
 			self.head = linked_node(data)
 		else:
 			new_node = linked_node(data)
+			new_node.next = self.head
 			self.head = new_node()
 		print ("test")
 
