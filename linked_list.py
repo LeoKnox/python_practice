@@ -17,7 +17,7 @@ class linked_list:
 		print ("test")
 
 	def peek(self):
-		console.log(self.head.value)
+		print(self.head.value)
 
 newList = linked_list()
 newList.add_node(5)
