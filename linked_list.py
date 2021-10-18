@@ -13,7 +13,7 @@ class linked_list:
 		else:
 			new_node = linked_node(data)
 			new_node.next = self.head
-			self.head = new_node()
+			self.head = new_node
 		print ("test")
 
 	def peek(self):
