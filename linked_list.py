@@ -7,28 +7,13 @@ class linked_list:
 	def __init__(self):
 		self.head = None
 
-	def show_list(self):
-		if self.head == None:
-			print("None")
-		else:
-			runner = self.head
-			while (runner.next != None):
-				print(runner.value)
-				runner = runner.next
-			print(runner.value)
-			print("print list")
-
 	def add_node(self, data):
 		new_node = linked_node(data)
-		if self.head == None:
-			self.head = new_node
-			print ("test")
-		else:
-			new_node.next = self.head
-			self.head = new_node
-			print('add node')
+		self.head = new_node()
+		print ("test")
 
-newList = linked_list()
+	def peek(self):
+		console.log(self.head.value)
+
+newList = linked_list(2)
 newList.add_node(5)
-newList.add_node(6)
-newList.show_list()
