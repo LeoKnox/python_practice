@@ -22,3 +22,5 @@ class linked_list:
 newList = linked_list()
 newList.add_node(5)
 newList.peek()
+newList.add_node(7)
+newList.peek()
