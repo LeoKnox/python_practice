@@ -8,8 +8,11 @@ class linked_list:
 		self.head = None
 
 	def add_node(self, data):
-		new_node = linked_node(data)
-		self.head = new_node()
+		if self.head == None:
+			self.head = linked_node(data)
+		else:
+			new_node = linked_node(data)
+			self.head = new_node()
 		print ("test")
 
 	def peek(self):
@@ -17,3 +20,4 @@ class linked_list:
 
 newList = linked_list()
 newList.add_node(5)
+newList.peek()
