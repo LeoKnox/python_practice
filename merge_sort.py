@@ -5,6 +5,9 @@ def merge_sort(sort_arr):
 	left = sort_arr[:mid]
 	right = sort_arr[mid:]
 
+	merge_sort(left)
+	merge_sort(right)
+
 	print(left)
 	print(right)
 
