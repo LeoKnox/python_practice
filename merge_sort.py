@@ -19,6 +19,16 @@ def merge_sort(sort_arr):
 			y += 1
 		z += 1
 
+	while (x < len(left)):
+		sort_arr[z] = left[x]
+		x += 1
+		z += 1
+
+	while (y < len(right)):
+		sort_arr[z] = right[y]
+		y += 1
+		z += 1
+
 start_arr = [5,9,2,8,4,3,1]
 merge_sort(start_arr)
 
