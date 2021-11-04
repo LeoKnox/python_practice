@@ -1,3 +1,10 @@
 .myImage {
   width: 50%;
 }
+
+.star {
+  fill:lime;
+  stroke:purple;
+  stroke-width:5;
+  fill-rule:nonzero;
+}
