@@ -5,5 +5,8 @@ class Adventurer:
     self.race = race
     self.level = 1
 
+  def show_level():
+    print(level)
+
 myadv = Adventurer("Elric", "fighter/mage", "elf")
-print(myadv.level)
+print(myadv.show_level)
