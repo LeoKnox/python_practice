@@ -6,7 +6,7 @@ class Adventurer:
     self.level = 1
 
   def show_level(self):
-    print(f("{self.name} are level {self.level}."))
+    print(f"{self.name} you are level {self.level}.")
 
 myadv = Adventurer("Elric", "fighter/mage", "elf")
 myadv.show_level()
