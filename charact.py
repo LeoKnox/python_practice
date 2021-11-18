@@ -13,7 +13,7 @@ class Adventurer:
   def attack(self):
     loc=["low", "middle", "high"]
     wt=[3, 5, 2]
-    attack_location = random.choice(loc, wt)
+    attack_location = random.choices(loc, wt)
     attack_roll = random.randrange(1,21,1)
     print(f"{self.name} strikes to hit with a {attack_roll} at {attack_location}")
 
