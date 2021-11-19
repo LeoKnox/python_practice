@@ -12,7 +12,7 @@ class Adventurer:
 
   def show_exp(self):
     xp = 27.833
-    print(xp)
+    print(f"This much {xp :2}")
 
   def attack(self):
     loc=["low", "middle", "high"]
