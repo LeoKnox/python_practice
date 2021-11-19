@@ -10,6 +10,10 @@ class Adventurer:
   def show_level(self):
     print(f"{self.name} you are level {self.level}.")
 
+  def show_exp(self):
+    xp = 27.833
+    print(xp)
+
   def attack(self):
     loc=["low", "middle", "high"]
     wt=[3, 5, 2]
@@ -20,3 +24,4 @@ class Adventurer:
 myadv = Adventurer("Elric", "fighter/mage", "elf")
 myadv.show_level()
 myadv.attack()
+myadv.show_exp()
