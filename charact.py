@@ -25,3 +25,6 @@ myadv = Adventurer("Elric", "fighter/mage", "elf")
 myadv.show_level()
 myadv.attack()
 myadv.show_exp()
+
+weapons = ['sword', 'staff', 'spear']
+print(weapons)
