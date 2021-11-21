@@ -31,4 +31,8 @@ del weapons[1]
 weapons.append('bow')
 for x in weapons:
   print(x)
+  if x == 'spear':
+    break
 print(weapons.pop(0))
+weapons.remove('bow')
+print(weapons)
