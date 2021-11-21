@@ -29,6 +29,6 @@ myadv.show_exp()
 weapons = ['sword', 'staff', 'spear']
 del weapons[1]
 weapons.append('bow')
+for x in weapons:
+  print(x)
 print(weapons.pop(0))
-weapons.remove('bow')
-print(weapons)
