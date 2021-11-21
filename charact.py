@@ -30,9 +30,11 @@ weapons = ['sword', 'staff', 'spear']
 del weapons[1]
 weapons.append('bow')
 for x in weapons:
-  print(x)
   if x == 'spear':
+    print(f"{x} break")
     break
+  else:
+    print(x)
 print(weapons.pop(0))
 weapons.remove('bow')
 print(weapons)
