@@ -21,12 +21,17 @@ class Adventurer:
     attack_roll = random.randrange(1,21,1)
     print(f"{self.name} strikes to hit with a {attack_roll} at {attack_location}{' critical!' if attack_roll == 20 else ''}")
 
+  def add_weapons(self, *weapons):
+    for weapon in weapons:
+      print(f"adding {weapon} to inventory")
+
 myadv = Adventurer("Elric", "fighter/mage", "elf")
 myadv.show_level()
 myadv.attack()
 myadv.show_exp()
 
 weapons = ['sword', 'staff', 'spear']
+myadv.add_weapons(weapons)
 del weapons[1]
 weapons.append('bow')
 for x in weapons:
