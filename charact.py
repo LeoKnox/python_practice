@@ -31,7 +31,7 @@ myadv.attack()
 myadv.show_exp()
 
 weapons = ['sword', 'staff', 'spear']
-myadv.add_weapons(weapons)
+myadv.add_weapons('sword', 'staff', 'spear')
 del weapons[1]
 weapons.append('bow')
 for x in weapons:
