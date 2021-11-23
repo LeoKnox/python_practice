@@ -1,9 +1,9 @@
 import random
 
 def hit(ac):
-  x = random.randint(1,21)
+  x = random.randint(1,20)
   print(x)
-  return x > ac
+  return x >= ac
 
 char_acs=[13,16,19,18]
 
