@@ -1,5 +1,9 @@
+import random
+
 def hit(ac):
-  return 18 > ac
+  x = random.randint(1,21)
+  print(x)
+  return x > ac
 
 char_acs=[13,16,19,18]
 
