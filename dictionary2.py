@@ -8,3 +8,6 @@ empty['more'] = "more empty"
 
 
 print(empty.popitem())
+
+empty.clear()
+print(empty)
