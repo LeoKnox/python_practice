@@ -3,5 +3,8 @@ empty = {}
 
 print(dictinay_test[1])
 empty['fill'] = "not empty"
+empty['more'] = "more empty"
 
-print(empty['fill'])
+
+
+print(empty.popitem())
