@@ -11,3 +11,5 @@ print(empty.popitem())
 
 empty.clear()
 print(empty)
+
+del(empty)
