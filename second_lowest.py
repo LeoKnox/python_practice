@@ -13,11 +13,12 @@
                 lowest[1] = score
             #compare if score equals lowest add sorted to array
             #compare if score is lower then second score to second
-            #elif (second[0][1] > score):
-            print(second)
+            elif (second[0][1] > score):
+                print(second)
         # if lowest is empty assign first score
         else:
             lowest.append(name)
             lowest.append(score)
+            second = [lowest]
     print (lowest)
     print (second)
