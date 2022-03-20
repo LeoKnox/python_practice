@@ -5,7 +5,7 @@
         second = []
         print(name + " " + str(score))
         # check if lowest variable exists
-        if lowest:
+        if len(lowest) > 0:
             print("2")
             #compare if score is lower assign lowest to second lowest
             if (lowest[1] > score):
@@ -19,5 +19,5 @@
             print("1")
             lowest.append(name)
             lowest.append(score)
-    print (lowest) 
+    print (lowest)
     print (second)
