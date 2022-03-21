@@ -1,3 +1,4 @@
+if __name__ == '__main__':
     lowest = []
     second = []
     for _ in range(int(input())):
@@ -8,9 +9,12 @@
         if len(lowest) > 0:
             #compare if score is lower assign lowest to second lowest
             if (lowest[1] > score):
-                second = [lowest]
+                print("*")
+                print(lowest)
+                second[0] = lowest
                 lowest[0] = name
                 lowest[1] = score
+                print(second)
             #compare if score equals lowest add sorted to array
             #compare if score is lower then second score to second
             elif (second[0][1] > score):
