@@ -1,14 +1,14 @@
-if __name__ == '__main__':
     lowest = []
     second = []
     for _ in range(int(input())):
         name = input()
         score = float(input())
+        student = (name, score)
         print(name + " " + str(score))
         # check if lowest variable exists
         if len(lowest) > 0:
             #compare if score is lower assign lowest to second lowest
-            if (lowest[1] > score):
+            if (lowest[1] > student[1]):
                 print("*")
                 print(lowest)
                 second[0] = lowest
