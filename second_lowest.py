@@ -10,10 +10,10 @@
             #compare if score is lower assign lowest to second lowest
             if (lowest[1] > student[1]):
                 print("*")
-                print(lowest)
-                second[0] = lowest
+                second[0] = (lowest[0], lowest[1])
                 lowest[0] = name
                 lowest[1] = score
+                print(lowest)
                 print(second)
             #compare if score equals lowest add sorted to array
             #compare if score is lower then second score to second
