@@ -16,6 +16,9 @@
                 print(lowest)
                 print(second)
             #compare if score equals lowest add sorted to array
+            elif (second[0][1] == score):
+                print("&&&")
+                second.append((name, score))
             #compare if score is lower then second score to second
             elif (second[0][1] > score):
                 print("**")
