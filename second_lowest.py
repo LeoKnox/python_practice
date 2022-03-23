@@ -20,6 +20,7 @@
             elif (second[0][1] > score):
                 print("**")
                 print(second)
+                second = (name, score)
         # if lowest is empty assign first score
         else:
             print("!")
