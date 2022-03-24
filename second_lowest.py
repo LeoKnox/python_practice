@@ -32,7 +32,7 @@ if __name__ == '__main__':
             lowest.append(score)
             second = [lowest]
     #print (lowest)
-    print (second)
-    second = second.sort()
-    for sec in second:
-        print(sec)
+    second.sort()
+    #print (second)
+    for s in second:
+        print(s[0])
