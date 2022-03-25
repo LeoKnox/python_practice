@@ -1,4 +1,3 @@
-if __name__ == '__main__':
     lowest = []
     second = []
     for _ in range(int(input())):
@@ -16,6 +15,7 @@ if __name__ == '__main__':
                 lowest[1] = score
                 #print(lowest)
                 #print(second)
+            #compare if lowest equals score and add
             #compare if score equals lowest add sorted to array
             elif (second[0][1] == score):
                 #print("&&&")
