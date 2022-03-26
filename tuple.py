@@ -1,5 +1,7 @@
     n = int(raw_input())
     integer_list = map(int, raw_input().split())
+    tuple_list = ()
+    tuple_list(tuple(integer_list))
     print('N:', n)
     print('il:', integer_list)
-    print('h:', hash(integer_list[0]))
+    print('h:', hash(tuple_list))
