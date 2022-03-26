@@ -1,0 +1,5 @@
+    n = int(raw_input())
+    integer_list = map(int, raw_input().split())
+    print('N:', n)
+    print('il:', integer_list)
+    print('h:', hash(integer_list[0]))
