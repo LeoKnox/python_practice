@@ -6,9 +6,9 @@ def count_substring(string, sub_string):
             if position == 0:
                 position = i
             sub_index = sub_index + 1
+        elif sub_index == len(sub_string)-1:
+            return position
         elif sub_index > 0:
             sub_index = 0
             position = 0
-        elif sub_index == len(sub_string)-1:
-            return position
-    return position
+    return "error"
