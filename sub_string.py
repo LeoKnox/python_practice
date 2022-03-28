@@ -3,7 +3,7 @@ def count_substring(string, sub_string):
     sub_index = 0
     print(sub_string[sub_index])
     for i, ch in enumerate(string):
-        print(len(sub_string)-1, "***")
+        print(i, ch, sub_string[sub_index])
         if ch == (sub_string[sub_index] and sub_index == len(sub_string-1)):
             sub_index = sub_index + 1
             print(sub_string)
