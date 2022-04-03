@@ -1,14 +1,13 @@
+if __name__ == '__main__':
     low = []
     ans = []
-    grades = {}
     for _ in range(int(input())):
         name = input()
         score = float(input())
-        if grades[score]:
+        if len(low) > 0:
             print("dupe")
         else:
-            grades[score]= name
+            low.append((name, score))
         print(name, score)
         low.append((name, score))
     print(low)
-    print(grades)
