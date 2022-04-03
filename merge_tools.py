@@ -1,4 +1,4 @@
-def merge_the_tools(string, k):
+    '''
     groups = [string[i:i+k] for i in range(0, len(string), k)]
     ans = []
     for g in groups:
@@ -7,4 +7,12 @@ def merge_the_tools(string, k):
             if i not in temp:
                 temp += i
         ans.append(temp)
-    print(ans)
+    for a in ans:
+        print(a)
+    '''
+    for i in range(0,len(string),k):
+        ans = ""
+        for j in range(i,i+k,1):
+            if string[j] not in ans:
+                ans += string[j]
+        print(ans)
