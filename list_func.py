@@ -4,6 +4,6 @@ if __name__ == '__main__':
     print(N)
     for i in range(N):
         command = input()
-        command.split(" ")
+        command = command.split(" ")
         #ans[command](*args)
         print(command)
