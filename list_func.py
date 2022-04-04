@@ -6,4 +6,4 @@ if __name__ == '__main__':
         command = input()
         command = command.split(" ")
         #ans[command](*args)
-        print(command)
+        print(command[1:])
