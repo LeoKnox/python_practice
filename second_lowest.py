@@ -1,15 +1,16 @@
 if __name__ == '__main__':
-    low = 10000
-    second = 10000
+    low = 100
+    second = 100
     grades = {}
     for _ in range(int(input())):
         name = input()
         score = float(input())
-        if score < low:
-            second = low
-            low = score
-        elif score == low:
-            pass
+        if score <= low:
+            if score == low:
+                pass
+            else:
+                second = low
+                low = score
         elif score < second:
             second = score
         if score in grades:
