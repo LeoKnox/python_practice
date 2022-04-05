@@ -7,6 +7,6 @@ if __name__ == '__main__':
         command = input()
         command = command.split(" ")
         #ans[command](*args)
-        comm = [i for i in command[1:]]
+        comm = ",".join([i for i in command[1:]])
         #print(eval(command[0], *command[1:]), comm)
         print(comm)
