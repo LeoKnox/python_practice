@@ -10,5 +10,6 @@ if __name__ == '__main__':
         comm = ",".join([i for i in command[1:]])
         #print(eval(command[0], *command[1:]), comm)
         print(command[0], comm)
-        eval("ans." + command[0] + "(" + comm + ")")
+        if command[0] != "print":
+            eval("ans." + command[0] + "(" + comm + ")")
         print(ans)
