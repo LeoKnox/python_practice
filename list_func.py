@@ -1,9 +1,12 @@
 if __name__ == '__main__':
     N = int(input())
     ans = []
-    print(N)
+    #print(N)
+    comm = ""
     for i in range(N):
         command = input()
         command = command.split(" ")
         #ans[command](*args)
-        print(command[1:])
+        comm = [i for i in command[1:]]
+        #print(eval(command[0], *command[1:]), comm)
+        print(comm)
