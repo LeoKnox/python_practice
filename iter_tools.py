@@ -1,8 +1,10 @@
 def recur_iter(a):
     if type(a) == list:
-        recur_iter(a)
+        for i in a:
+            recur_iter(i)
     else:
         print(a)
+        return(a)
 
 a = input().split()
 b = input().split()
