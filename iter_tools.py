@@ -1,5 +1,6 @@
 a = input()
 b = input()
 
-print(a)
-print(b)
+for i in a:
+    for j in b:
+        print (i, j)
