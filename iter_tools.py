@@ -1,9 +1,9 @@
-def recur_iter(a):
+def recur_iter(a, b):
     if type(a) == list:
         for i in a:
-            recur_iter(i)
+            recur_iter(i, b)
     else:
-        print(a)
+        print(b, a)
         return(a)
 
 a = input().split()
@@ -12,11 +12,4 @@ b = input().split()
 #print(list(a))
 #print(b)
 ans = ""
-recur_iter(a)
-'''
-for i in a[0:len(a):1]:
-    for j in b[0:len(b):1]:
-        #print(i, j)
-        ans += "("+i+", "+j+")"+" "
-print(ans)
-'''
+recur_iter(a, 8)
