@@ -4,10 +4,12 @@ cnt = input()
 new_arr = Counter(input())
 sum = 0
 print(new_arr)
+cnt = input()
 
-for i in range(0, int(cnt)-3):
-    ans = input()
+for i in range(0, int(cnt)):
+    ans = input().split(" ")
     print(ans)
-    sum += new_arr[i]
+    if ans:
+        sum += 1
     new_arr[i] -= 1
 print (sum)
