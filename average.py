@@ -1,7 +1,8 @@
 def average(array):
-    print(array)
     thisset = set()
     sum = 0;
     for i in array:
         thisset.add(i);
-    return(thisset);
+    for j in thisset:
+        sum += j
+    return(sum/len(thisset));
