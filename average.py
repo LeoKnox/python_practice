@@ -5,4 +5,4 @@ def average(array):
         thisset.add(i);
     for j in thisset:
         sum += j
-    return(sum/len(thisset));
+    return(format(sum/len(thisset),".3f"));
