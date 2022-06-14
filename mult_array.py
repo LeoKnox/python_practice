@@ -1,6 +1,5 @@
 import sys
+from itertools import product
 
-x = []
-for i in sys.stdin:
-    x.append(i)
+x = sys.stdin
 print(x)
