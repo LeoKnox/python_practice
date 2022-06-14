@@ -1,5 +1,7 @@
 import sys
 from itertools import product
 
-x = sys.stdin
-print(x)
+x = []
+x.append(input().split(' '))
+x.append(input().split(' '))
+print(list(product(*x)))
