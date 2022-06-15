@@ -1,5 +1,5 @@
 i = int(input())
 newarr = []
 for j in range(i):
-    newarr.append(input().split())
-print(newarr)
+    x = (input().split())
+    print(int(x[0])//int(x[1]))
