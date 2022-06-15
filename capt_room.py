@@ -1,3 +1,5 @@
+from collections import Counter
+
 k = int(input())
-rooms = set(input())
+rooms = Counter(input())
 print(rooms)
