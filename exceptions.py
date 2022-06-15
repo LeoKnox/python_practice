@@ -1,6 +1,4 @@
-i = int(input())
-newarr = []
-for j in range(i):
+for j in range(int(input())):
     x = (input().split())
     try:
         print(int(x[0])//int(x[1]))
