@@ -2,6 +2,7 @@ import sys
 from itertools import product
 
 x = []
+y = []
 x.append(input().split(' '))
-x.append(input().split(' '))
-print (list(product(*x)))
+y.append(input().split(' '))
+print(list(product(x*y)))
