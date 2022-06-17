@@ -1,7 +1,7 @@
 cube = lambda x: x**3
 
-def my_fibo(n):
-    return n+1
-
 def fibonacci(n):
-    return([0,1,1,2,3])
+    fibo = [0, 1]
+    for i in range(n-2):
+        fibo.append(fibo[i]+fibo[i+1])
+    return fibo
