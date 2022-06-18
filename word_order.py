@@ -3,4 +3,7 @@ for i in range(int(input())):
     x = input()
     newset[x] = newset.get(x, 0) + 1
 print(len(newset))
-print(list(newset.values()), sep=' ')
+y = ""
+for i in newset.values():
+    y = y + str(i) + " "
+print(y)
