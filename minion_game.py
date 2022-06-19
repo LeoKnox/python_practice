@@ -9,9 +9,9 @@ def minion_game(string):
             minions[string[j:i]] = minions.get(string[j:i], 0) + 1
         for j in range(len(string)):
             print(string[j:i])
+    del minions['']
     print(minions)
-    minions[''] = 0
     for m in minions:
-        if m not in vowels or m != '':
+        if (m not in vowels):
             total += minions[m]
     print(total)
