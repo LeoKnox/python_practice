@@ -7,3 +7,5 @@ def minion_game(string):
             minions[string[i]] = minions.get(string[i], 0) + 1
         i += 1
     print(minions)
+    for j in range(len(string)):
+        print(j)
