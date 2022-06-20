@@ -2,7 +2,8 @@ def minion_game(string):
     minions = {}
     vowels = {'A', 'E', 'I', 'O', 'U'}
     i = 0
-    total = 0
+    stuart = 0
+    kevin = 0
     while i < len(string):
         i += 1
         for j in range(len(string)):
@@ -13,5 +14,7 @@ def minion_game(string):
     #print(minions)
     for m in minions:
         if ((m not in vowels) and not (m.startswith("A"))):
-            total += minions[m]
-    print(total)
+            stuart += minions[m]
+        if ((m not in vowels) and (m.startswith("A"))):
+            kevin += minions[m]
+    print(stuart, " ", kevin)
