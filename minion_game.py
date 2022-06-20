@@ -17,4 +17,8 @@ def minion_game(string):
             stuart += minions[m]
         if ((m not in vowels) and (m.startswith("A"))):
             kevin += minions[m]
-    print(stuart, " ", kevin)
+    #print(stuart, " ", kevin)
+    if stuart > kevin:
+        print("Stuart", stuart)
+    else:
+        print("Kevin", kevin)
