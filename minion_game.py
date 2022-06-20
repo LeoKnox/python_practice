@@ -12,6 +12,6 @@ def minion_game(string):
     del minions['']
     print(minions)
     for m in minions:
-        if (m not in vowels):
+        if ((m not in vowels) or (m.startswith("A"))):
             total += minions[m]
     print(total)
