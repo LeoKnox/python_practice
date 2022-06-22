@@ -10,4 +10,4 @@ for i in oldstring:
         charDict['even'] = charDict.get('even', '') + i
     if i.isnumeric() and int(i)%2 == 1:
         charDict['odd'] = charDict.get('odd', '') + i
-print(''.join(charDict['lower'])+''.join(charDict['upper'])+''.join(charDict['odd'])+''.join(charDict['even']))
+print(''.join(sorted(charDict['lower']))+''.join(charDict['upper'])+''.join(charDict['odd'])+''.join(charDict['even']))
