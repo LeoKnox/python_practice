@@ -1,2 +1,4 @@
 def repeatedString(s, n):
-    return (n//len(s))
+    runs = n//len(s)
+    cnts = s.count('a')
+    return (cnts)
