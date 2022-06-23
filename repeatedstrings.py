@@ -1,8 +1,6 @@
-def repeatedString(s, n):
-    runs = n//len(s)
-    cnts = s.count('a')
-    total = runs*cnts
-    for i in range(n%len(s)):
-        if s[i] == 'a':
-            total+=1
-    return (total)
+def rotLeft(a, d):
+    first = a[:d]
+    second = a[d:]
+    for f in first:
+        second.append(f)
+    return(second)
