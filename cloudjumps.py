@@ -8,6 +8,6 @@ def jumpingOnClouds(c):
         jumps += 1
         i += 1
         j.append([jumps, i])
-    if i <= len(c):
+    if i < len(c)-1:
         jumps += 1  
     return jumps
