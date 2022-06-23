@@ -7,5 +7,7 @@ def jumpingOnClouds(c):
             i += 1
         jumps += 1
         i += 1
-        j.append([jumps, i])    
-    return j
+        j.append([jumps, i])
+    if i <= len(c):
+        jumps += 1  
+    return jumps
