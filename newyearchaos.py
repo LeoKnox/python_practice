@@ -5,4 +5,7 @@ def minimumBribes(q):
         if i != q[i]:
             total += (q[i] - (i+1))
             bribes[i+1] = q[i]
+        if (q[i] - (i+1) > 2):
+            print("Too chaotic")
+            return()
     print (total)
