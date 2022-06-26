@@ -6,6 +6,6 @@ def has_cycle(head):
         fast = fast.next
         fast = fast.next
     if fast == slow:
-        return 1
+        return (slow, fast)
     if fast.next == None:
-        return 0
+        return ("none")
