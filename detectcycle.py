@@ -14,5 +14,3 @@ def has_cycle(head):
         fast = fast.next
     if fast == slow:
         return (1)
-    if fast.next == None:
-        return ("none")
