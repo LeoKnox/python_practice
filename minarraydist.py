@@ -1,5 +1,5 @@
 def minimumAbsoluteDifference(arr):
-    total = 999
+    total = abs(arr[0] - arr[1])
     index = 0
     while index < len(arr):
         temp = index + 1
