@@ -6,5 +6,6 @@ def getMinimumCost(k, c):
         for j in range(n):
             total += ((n-i))*c[i-j]
             alist.append((n-i)*c[i-j])
+            alist.append(n-i)
         i -= n
-    return total
+    return alist
