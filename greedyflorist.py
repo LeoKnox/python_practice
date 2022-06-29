@@ -4,8 +4,8 @@ def getMinimumCost(k, c):
     alist = []
     while i >= 0:
         for j in range(n):
-            total += ((n-i))*c[i-j]
+            total += ((i//k)+1)*c[i-j]
             alist.append((n-i)*c[i-j])
-            alist.append(n-i)
-        i -= n
-    return alist
+            alist.append(i//k)
+        i -= k
+    return total
