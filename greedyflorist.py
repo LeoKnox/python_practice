@@ -6,6 +6,8 @@ def getMinimumCost(k, c):
     while i >= 0:
         for j in range(k):
             total += (m+1)*c[i-j]
+            if i - j == 0:
+                return total
         i -= k
-        m = 1
+        m += 1
     return total
