@@ -3,5 +3,6 @@ def divisibleSumPairs(n, k, ar):
     test = []
     for i in range(len(ar)):
         for j in range(i,len(ar)):
-            test.append([i,j])
-    return test
+            if (ar[i] + ar[j])//k == 0:
+                pairs += 1
+    return pairs
