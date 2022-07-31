@@ -1,6 +1,6 @@
 def miniMaxSum(arr):
-    arrz = arr.sort()
+    arr.sort()
     sum = 0
-    for i in arrz:
+    for i in arr:
         sum += i
-    print(sum-arrz[len(arrz)-1], sum-arrz[0])
+    print(sum-arr[len(arr)-1], sum-arr[0])
