@@ -3,4 +3,4 @@ def miniMaxSum(arr):
     sum = 0
     for i in arrz:
         sum += i
-    print(sum-arr[len(arrz)-1], sum-arrz[0])
+    print(sum-arrz[len(arrz)-1], sum-arrz[0])
