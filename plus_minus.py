@@ -4,11 +4,11 @@ def plusMinus(arr):
     zero = 0
     for i in arr:
         if i < 0:
-            neg += abs(i)
+            neg += 1
         elif i > 0:
-            pos += i
+            pos += 1
         else:
             zero += 1
-    print (pos/len(arr))
-    print (neg/len(arr))
-    print (zero/len(arr))
+    print (pos)
+    print (neg)
+    print (zero)
