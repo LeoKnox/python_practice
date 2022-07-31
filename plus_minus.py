@@ -9,6 +9,6 @@ def plusMinus(arr):
             pos += 1
         else:
             zero += 1
-    print (pos)
-    print (neg)
-    print (zero)
+    print (pos/len(arr))
+    print (neg/len(arr))
+    print (zero/len(arr))
