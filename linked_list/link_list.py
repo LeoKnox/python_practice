@@ -16,9 +16,20 @@ class List():
       print(temp.value)
       temp = temp.next
     print(temp.value)
+  def remove(self, value):
+    temp = self.head
+    while (temp.next.value != value):
+      temp.next = next
+    if (temp.next.value == value):
+      temp.next = temp.next.next
+      
+      
 
 a = List()
 a.add(5)
 a.add(7)
 a.add(3)
+a.remove(7)
+a.remove(5)
+a.remove(3)
 a.print()
