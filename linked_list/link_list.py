@@ -18,7 +18,7 @@ class List():
     print(temp.value)
   def remove(self, value):
     temp = self.head
-    while (temp.next.value != value):
+    while (temp != None) and (temp.next.value != value):
       temp.next = next
     if (temp.next.value == value):
       temp.next = temp.next.next
