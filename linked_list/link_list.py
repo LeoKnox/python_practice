@@ -10,7 +10,15 @@ class List():
     temp = Node(value)
     temp.next = self.head
     self.head = temp
+  def print(self):
+    temp = self.head
+    while (temp.next != None):
+      print(temp.value)
+      temp = temp.next
+    print(temp.value)
 
 a = List()
 a.add(5)
-print(a.head.value, a.head.next)
+a.add(7)
+a.add(3)
+a.print()
