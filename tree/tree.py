@@ -9,8 +9,9 @@ class Tree():
     self.head = None
   def add(self, value):
     if self.head == None:
-      self.head.value = 3
+      temp = Node(value)
+      self.head = temp
 
 t = Tree()
-#t.add(3)
-print(t)
+t.add(3)
+print(t.head.value)
