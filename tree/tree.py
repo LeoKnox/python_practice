@@ -8,9 +8,16 @@ class Tree():
   def __init__(self):
     self.head = None
   def add(self, value):
-    if self.head == None:
+    temp = self.head
+    if temp == None:
       temp = Node(value)
       self.head = temp
+    elif value > temp.value:
+      if temp.right == None:
+        temp.right = value
+      else:
+        print (temp.value)
+        temp = temp.right
 
 t = Tree()
 t.add(3)
