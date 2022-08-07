@@ -1,8 +1,8 @@
 def diagonalDifference(arr):
   first = 0
   second = 0
-  for i in range(0,len(arr)):
-    for j in (len(arr),0):
+  for i in range(0,len(arr)-1):
+    for j in (0,len(arr)-1, -1):
       first += arr[i][j]
       second += arr[j][i]
-  return(abs(first-second))
+  return("f",abs(first-second))
