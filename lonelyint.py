@@ -1,8 +1,8 @@
 def lonelyinteger(a):
     d = {}
     for i in a:
-        if d[a] == None:
-            d[a] = 1
+        if not d[i]:
+            d[i] = 1
         else:
-            d[a] += 1
+            d[i] += 1
     return d
