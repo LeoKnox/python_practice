@@ -1,10 +1,7 @@
 def diagonalDifference(arr):
   first = 0
   second = 0
-  x = [0, 1,2]
-  l = 2
-  for i in x:
+  for i in range(0,len(arr)):
     first += arr[i][i]
-    second += arr[l-i][i]
-    #x.append([arr[i][len(arr)-i], arr[len(arr)-i][i]])
+    second += arr[len(arr)-i-1][i]
   return(abs(first-second))
