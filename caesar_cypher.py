@@ -4,7 +4,10 @@ def caesarCipher(s, k):
     n = ""
     for i in s:
         if i.isalpha():
-            n += chr(ord(i)+k)
+            if (ord(i)+k > 90):
+                n += chr(ord(i)+k-90+65)
+            else:
+                n += chr(ord(i)+k)
         else:
             n += i
     return(n)
