@@ -6,5 +6,4 @@ def superDigit(n, k):
             t += int(i)
         l = list(str(t))
         t = 0
-        k -= 1
-    return(l)
+    return(k*int(l[0]))
