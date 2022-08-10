@@ -4,6 +4,6 @@ def superDigit(n, k):
     while (len(n) > 1):
         for i in l:
             t += int(i)
-        l = list(t)
+        l = list(str(t))
         t = 0    
     return(t)
