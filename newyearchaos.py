@@ -6,6 +6,7 @@ def minimumBribes(q):
             if diff > 2:
                 print('Too chaotic')
                 return()
+            print(":",i-q[i]+1)
             n.append(diff)
             #print(i, q[i], (q[i]-(i+1)))
         #else:
